@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Sally Student Resume</title>
+</head>
+<body>
+    <div id="application-root"></div>
+    
+    <script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+<script type="text/babel">
+    function Hello(props) {
+        return <h1>{props.name}'s Resume</h1>
+    }
+    function App() {
+  return (
+<div>
+  <header>
+    <Hello name="Sally Student" />
+    <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Sally Student photo"></img>
+  </header>
+  <main>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>Arizona State University, 2016</li>
+        <li>Princeton High School, 2007</li>
+        <li>Bloc Web Developer Track, 2020</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Employment History</h2>
+      <ul>
+        <li>
+          <h3>Nanny - Private Family - 2017-2019 </h3>
+              Cared for children, fed them, put them to bed.
+        </li>
+        <li>
+          <h3>Stand-up comedian - Self Employed - 2015-2017
+          </h3>
+              Made scores of people laugh for extended periods of time.
+        </li>
+      </ul>
+    </section>
+    <footer className="footer">
+        <address>
+        <h3>Contact Sally Student at:</h3>
+        <a href="mailto:sallystudent@sally.com">sallystudent@sally.com</a>
+        <br></br>
+        <a href="tel:+1234567890">(123) 456-7890</a>
+        </address>
+    </footer>
+  </main>
+    </div>
+  );
+};
+    ReactDOM.render(<App />, document.querySelector('#application-root'));
+
+</script>
+</body>
+</html>
